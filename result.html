@@ -1,0 +1,65 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>【脳トレ】後出しジャンケン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="waku">
+  <div class="resultTitle">
+  <h1>Score</h1>
+  </div>
+  <div class="kekkaBox"></div>
+
+  <div class="tourokuBox">
+    <div class="form">
+      <div class="title">
+        <h2> 結果を送信してね</h2>
+      </div>
+
+      <form method="post" action="insert.php" >
+        <table class="form-table">
+          <tr>
+            <th>名前</th>
+            <td><input type="text" name="name" value="" placeholder="例）ほげほげさん"></td>
+          </tr>
+          <tr>
+            <th>点数</th>
+            <td><input type="text" name="score"></td>
+          </tr>
+          <tr>
+            <th class="details">一言どうぞ！</th>
+            <td><textarea name="memo" id="memo" cols="30" rows="10" placeholder="例）楽しかった！"></textarea></td>
+          </tr>
+          </table>
+        </div>
+        <div class="submit-btn-touroku">
+         <input type="submit" value="送信！">
+        </div>
+      </form>
+        <a href="ranking.php"><button class="startBtn">ランキングを表示</button></a>
+        <a href="top.html"><button class="startBtn">TOPへ戻る</button></a>
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="main.js" charset="utf-8"></script>
+
+</body>
+</html>
